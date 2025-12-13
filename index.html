@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Time</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <div class=" first">
+
+        <nav class="navbar navbar-expand-lg bg-body-transparent  px-5 ">
+            <div class="container-fluid ">
+                <a class="navbar-brand text-light fw-bold fs-lg-2" href="#">TravelTime</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon  "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav mx-auto mt-3 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <button class="btn getstarted">Get Started</button>
+                </div>
+            </div>
+        </nav>
+        <header class="container">
+
+            <div class="row mt-5">
+                <div class="col-lg-6 col-12 p-5 d-flex flex-column gap-3">
+                    <h1 class="fw-bold">Discover the World with Us</h1>
+                    Explore breathtaking destinations and create unforgettable memories with our expertly crafted tours.
+
+                    <div class="d-flex flex-wrap gap-2 mt-2 sm-justify-content-center">
+                        <button class="btn getstarted rounded-5">Start Exploring</button>
+                        <button class="btn btn-outline-danger rounded-5">View Tours</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <form action="" class="text-bg-dark p-4 border-0 rounded">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <label for="des" class="form-label">Destination</label>
+                                <input type="text" class="form-control " placeholder="Where do you want to go?">
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <label for="des" class="form-label">Check In</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <label for="des" class="form-label">Check Out</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <label for="des" class="form-label">Adults</label>
+                                <input type="text" class="form-control" value="2">
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <label for="des" class="form-label">Children</label>
+                                <input type="text" class="form-control" value="0">
+                            </div>
+                            <div class="col-12">
+                                <button class="btn getstarted mt-3 w-100">Search Tours</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </header>
+
+
+    </div>
+
+
+
+
+
+    <section id="aboutus" class="container">
+        <div class="row g-4 my-5   ">
+            <div class="col-lg-6 col-12 border rounded-4 p-5 d-flex flex-column gap-4">
+                <div>
+                    <h6 class=" rounded-pill px-3 py-1  "
+                        style="background-color: #feeeed; color: #f95e4d; width: fit-content;">ABOUT US</h6>
+                    <h2>Creating Unforgettable Travel Experiences</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam eaque ipsa quae ab illo inventore veritatis.</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores.</p>
+                </div>
+
+                <li><i class="bi bi-check-circle-fill"></i> Expert local guides in every destination</li>
+                <li><i class="bi bi-check-circle-fill"></i> Customized itineraries for every traveler</li>
+                <li><i class="bi bi-check-circle-fill"></i> 24/7 customer support throughout your journey</li>
+
+
+            </div>
+            <div class="col-lg-6 col-12  rounded position-relative ">
+                <img class="img-fluid rounded-4 " style=" object-position: right; object-fit: cover; height: 100%;  "
+                    src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/showcase-12.webp" alt="">
+
+                <div
+                    class="text-bg-light position-absolute  top-0 end-0 m-4 p-3 rounded-5 d-flex gap-2 align-items-center justify-content-center">
+                    <div><i class="bi bi-award-fill fs-4"></i></div>
+                    <div>
+                        <h6>Award Winner</h6>
+                        <p> Best Travel Agency 2024 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="container-fluid d-flex flex-column justify-content-center align-items-center text-center m-2 gap-2">
+        <h6 class=" rounded-pill px-3 py-1  " style="background-color: #feeeed; color: #f95e4d;">WHY CHOOSE US</h6>
+        <h1>What Makes Us Different</h1>
+        <p class="" style="width: 40%;">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur
+            adipisci velit</p>
+    </section>
+
+
+
+
+    <section id="four" class="container my-5 ">
+        <div class="row gap-2 d-flex justify-content-center gap-3 ">
+
+            
+                <div class="card c-1  col-lg-3 col-md-6 ">
+                    <i class="bi bi-stopwatch"></i>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5> Expert Navigation</h5>
+                        </div>
+                        <div class="card-text  ">
+                            <p> Quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
+                        </div>
+                    </div>
+                </div>
+
+            
+            <div class="card c-2 col-lg-3 col-md-6">
+                <i class="bi bi-heart-fill"></i>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h5> Personalized Care</h5>
+                    </div>
+                    <div class="card-text ">
+                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card c-3 col-lg-3 col-md-6">
+                <i class="bi bi-lightning-charge-fill"></i>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h5> Instant Booking</h5>
+                    </div>
+                    <div class="card-text ">
+                        <p> Ut enim ad minim veniam quis nostrud exercitation ullamco</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card c-4 col-lg-3 col-md-6">
+                <i class="bi bi-globe-americas"></i>
+
+                <div class="card-body">
+                    <div class="card-title">
+                        <h5> Worldwide Coverage</h5>
+                    </div>
+                    <div class="card-text fs-6 ">
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div class="container my-5">
+
+        <h6>FEATURED DESTINATIONS</h6>
+
+        <h4>Check Our Featured Destinations</h4>
+
+
+        <div class="row gy-4 my-5">
+            <div  class=" col-md-4">
+
+                <div class="feature card  rounded-4">
+                    <img class="position-relative rounded-top-4"
+                        src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/destination-1.webp"
+                        class="card-img-top" alt="...">
+                    <span class="badge text-bg-danger position-absolute m-2 px-2 rounded-pill">Popular</span>
+                    <div class="card-body">
+                        <h5 class="card-title">Santorini, Greece</h5>
+                        <p class="card-text">Experience breathtaking sunsets and pristine white-washed villages
+                            overlooking the azure Aegean Sea.</p>
+                        <div class="">
+                            <small class="double border rounded-pill px-2">ROMANTIC</small>
+                            <small class="double border rounded-pill px-2">LUXURY</small>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <small class="">12 Tours Available</small>
+                            <a href="#" class="btn rounded-pill border explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-4 ">
+                <div class="feature card rounded-4 ">
+                    <img class="position-relative rounded-top-4"
+                        src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/destination-5.webp"
+                        class="card-img-top" alt="...">
+                    <span class="badge text-bg-danger position-absolute m-2 px-2 rounded-pill">EDITOR'S PICK</span>
+                    <div class="card-body">
+                        <h5 class="card-title">Bali, Indonesia </h5>
+                        <p class="card-text">Discover tropical paradise with ancient temples, lush rice terraces, and
+                            world-class beaches.</p>
+                        <div class="">
+                            <small class="double rounded-pill px-2">ADVENTURE</small>
+                            <small class="double rounded-pill px-2">CULTURE</small>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <small class="">18 Tours Available</small>
+                            <a href="#" class="btn rounded-pill border explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="feature card rounded-4">
+                    <img class="position-relative rounded-top-4"
+                        src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/destination-8.webp"
+                        class="card-img-top" alt="...">
+                    <span class="badge text-bg-success position-absolute m-2 px-2 rounded-pill">NEW</span>
+                    <div class="card-body">
+                        <h5 class="card-title">Machu Picchu, Peru</h5>
+                        <p class="card-text">Trek through ancient Incan ruins and witness one of the world's most
+                            spectacular archaeological sites</p>
+                        <div class="">
+                            <small class="double border rounded-pill px-2">ADVENTURE</small>
+                            <small class="double border rounded-pill px-2">HISTORY</small>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <small class="">8 Tours Available</small>
+                            <a href="#" class="btn rounded-pill border explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="feature card rounded-4">
+                    <img class="position-relative rounded-top-4"
+                        src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/destination-12.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kyoto, Japan</h5>
+                        <p class="card-text">Immerse yourself in traditional Japanese culture with beautiful temples,
+                            gardens, and historic districts.</p>
+                        <div class="">
+                            <small class="double border rounded-pill px-2">CULTURE</small>
+                            <small class="double border rounded-pill px-2">PEACEFUL</small>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <small class="">15 Tours Available</small>
+                            <a href="#" class="btn rounded-pill border explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="feature card rounded-4">
+                    <img class="position-relative rounded-top-4"
+                        src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/destination-3.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Swiss Alps, Switzerland</h5>
+                        <p class="card-text">Adventure awaits in pristine mountain landscapes with world-class skiing
+                            and hiking opportunities </p>
+                        <div class="">
+                            <small class="double border rounded-pill px-2">ADVENTURE</small>
+                            <small class="double border rounded-pill px-2">NATURE</small>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <small class="">22 Tours Available</small>
+                            <a href="#" class="btn rounded-pill border explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="feature card rounded-4">
+                    <img class="position-relative rounded-top-4"
+                        src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/destination-16.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Maldives</h5>
+                        <p class="card-text">Escape to paradise with crystal-clear waters, overwater bungalows, and
+                            unparalleled luxury.</p>
+                        <div class="">
+                            <small class="double border rounded-pill px-2">LUXURY</small>
+                            <small class="double border rounded-pill px-2">HONEYMOON</small>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <small class="">6 Tours Available</small>
+                            <a href="#" class="btn rounded-pill border explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div id="cant" class="row d-flex justify-content-center rounded">
+            <section class=" text-center p-5 col-lg-8 ">
+                <h1>Can't Decide Where to Go?</h1>
+                <p class=" ">Our travel experts are here to help you find the perfect destination based on your
+                    preferences, budget, and travel style.</p>
+                <div class="d-flex justify-content-center gap-3 mt-4">
+                    <a href="#" class="view-btn btn rounded-pill">View All Destinations</a>
+                    <a href="#" class="expert-btn btn rounded-pill ">Talk To Expert</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <h5>FEATURED TOURS</h5>
+        <h2>Check Our Featured Tours</h2>
+        <div class="row mt-4 d-flex justify-content-center gap-3">
+
+
+
+            <div
+                class="img-1 col-lg-3  rounded-5 d-flex flex-column justify-content-center align-items-center text-light gap-2">
+                <div class="img-11">
+                    <div class="d-flex gap-3"><button class="rounded-5 best" style="background-color: #f95e4d;">BEST
+                            SELLER</button>
+                        <button class="rounded border-0 p-2">$3,290</button>
+                    </div>
+                    <h3>Alpine Mountain Adventure</h3>
+                    <div class="d-flex  gap-4"><small><i class="bi bi-calendar-week" style="color: #f95e4d;"></i>
+                            7 Days</small>
+                        <small><i class="bi bi-geo-alt" style="color: #f95e4d;"></i> Swizerland</small>
+                    </div>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+                        nostrud.</p>
+
+                    <div class="d-flex"><button class="btn tour">EXPLORE TOUR</button>
+                        <small>⭐⭐⭐⭐⭐ 4.7</small>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div
+                class="img-2 col-lg-3  rounded-5 d-flex flex-column justify-content-center align-items-center text-light gap-2 ">
+
+                <div class="img-12">
+                    <div class="d-flex gap-3"><button class="rounded-5 best" style="background-color: #f95e4d;">HOT
+                            DEAL</button>
+                        <button class="rounded border-0 p-2">$1,850</button>
+                    </div>
+                    <h3>Tropical Island Hopping</h3>
+                    <div class="d-flex  gap-4"><small><i class="bi bi-calendar-week" style="color: #f95e4d;"></i>
+                            6 Days</small>
+                        <small><i class="bi bi-geo-alt" style="color: #f95e4d;"></i> Philippines</small>
+                    </div>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+                        nostrud.</p>
+
+                    <div class="d-flex"><button class="btn tour">EXPLORE TOUR</button>
+                        <small>⭐⭐⭐⭐⭐ 4.9</small>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="img-3 col-lg-3  rounded-5 d-flex flex-column justify-content-center align-items-center text-light gap-2">
+                <div class="img-13">
+                    <div class="d-flex gap-3"><button class="rounded-5 best"
+                            style="background-color: red;">CULTURAL</button>
+                        <button class="rounded border-0 p-2">$2,640</button>
+                    </div>
+                    <h3>Ancient Cultural Heritage</h3>
+                    <div class="d-flex  gap-4"><small><i class="bi bi-calendar-week" style="color: #f95e4d;"></i>
+                            9 Days</small>
+                        <small><i class="bi bi-geo-alt" style="color: #f95e4d;"></i> Combodia</small>
+                    </div>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+                        nostrud.</p>
+
+                    <div class="d-flex"><button class="btn tour">EXPLORE TOUR</button>
+                        <small>⭐⭐⭐⭐⭐ 4.5</small>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="img-4 col-lg-3  rounded-5 d-flex flex-column justify-content-center align-items-center text-light gap-2">
+                <div class="img-14">
+                    <div class="d-flex gap-3"><button class="rounded-5 best"
+                            style="background-color: orangered;">LIMITED</button>
+                        <button class="rounded border-0 p-2">$4,120</button>
+                    </div>
+                    <h3>Wildlife Safari Experience</h3>
+                    <div class="d-flex  gap-4"><small><i class="bi bi-calendar-week" style="color: #f95e4d;"></i>
+                            12 Days</small>
+                        <small><i class="bi bi-geo-alt" style="color: #f95e4d;"></i> Kenya</small>
+                    </div>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+                        nostrud.</p>
+
+                    <div class="d-flex"><button class="btn tour">EXPLORE TOUR</button>
+                        <small>⭐⭐⭐⭐⭐ 4.8</small>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div
+                class="img-5 col-lg-3  rounded-5 d-flex flex-column justify-content-center align-items-center text-light gap-2">
+
+
+                <div class="img-15">
+                    <div class="d-flex gap-3"><button class="rounded-5 best" style="background-color: lightgreen;">NEW
+                            TOUR</button>
+                        <button class="rounded border-0 p-2">$3,750</button>
+                    </div>
+                    <h3>Northern Lights Quest</h3>
+                    <div class="d-flex  gap-4"><small><i class="bi bi-calendar-week" style="color: #f95e4d;"></i>
+                            8 Days</small>
+                        <small><i class="bi bi-geo-alt" style="color: #f95e4d;"></i> Norway</small>
+                    </div>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+                        nostrud.</p>
+
+                    <div class="d-flex"><button class="btn tour">EXPLORE TOUR</button>
+                        <small>⭐⭐⭐⭐⭐ 4.6</small>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div
+                class="img-6 col-lg-3  rounded-5 d-flex flex-column justify-content-center align-items-center text-light gap-2">
+                <div class="img-16">
+                    <div class="d-flex gap-3"><button class="rounded-5 best"
+                            style="background-color: #f95e4d;">ADVENTURE</button>
+                        <button class="rounded border-0 p-2">$2,180</button>
+                    </div>
+                    <h3>Golden Desert Journey</h3>
+                    <div class="d-flex  gap-4"><small><i class="bi bi-calendar-week" style="color: #f95e4d;"></i>
+                            6 Days</small>
+                        <small><i class="bi bi-geo-alt" style="color: #f95e4d;"></i> Morocco</small>
+                    </div>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+                        nostrud.</p>
+
+                    <div class="d-flex"><button class="btn tour">EXPLORE TOUR</button>
+                        <small>⭐⭐⭐⭐⭐ 4.4</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class="img-7 col-lg-3  rounded-5 d-flex flex-column justify-content-center align-items-center text-light gap-2">
+
+                <div class="img-17">
+                    <div class="d-flex gap-3"><button class="rounded-5 best"
+                            style="background-color: goldenrod;">POPULAR</button>
+                        <button class="rounded border-0 p-2">$1,560</button>
+                    </div>
+                    <h3>European City Explorer</h3>
+                    <div class="d-flex  gap-4"><small><i class="bi bi-calendar-week" style="color: #f95e4d;"></i>
+                            10 Days</small>
+                        <small><i class="bi bi-geo-alt" style="color: #f95e4d;"></i> Europe</small>
+                    </div>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+                        nostrud.</p>
+
+                    <div class="d-flex"><button class="btn tour">EXPLORE TOUR</button>
+                        <small>⭐⭐⭐⭐⭐ 4.7</small>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div
+                class="img-8 col-lg-3  rounded-5 d-flex flex-column justify-content-center align-items-center text-light gap-2">
+
+                <div class="img-18">
+                    <div class="d-flex gap-3"><button class="rounded-5 best"
+                            style="background-color: blue;">LUXURY</button>
+                        <button class="rounded border-0 p-2">$5,890</button>
+                    </div>
+                    <h3>Coastal Paradise Retreat</h3>
+                    <div class="d-flex  gap-4"><small><i class="bi bi-calendar-week" style="color: #f95e4d;"></i>
+                            11 Days</small>
+                        <small><i class="bi bi-geo-alt" style="color: #f95e4d;"></i> Maldives</small>
+                    </div>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+                        nostrud.</p>
+
+                    <div class="d-flex"><button class="btn tour">EXPLORE TOUR</button>
+                        <small>⭐⭐⭐⭐⭐ 5.0</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container py-4 mt-5">
+   <h5>TESTOMINALS</h5>
+        <h2>What Our Customers Are Saying</h2>
+    <div id="myCarousel" class="carousel slide mt-5" data-bs-ride="carousel"
+         data-bs-interval="2000">   <!-- 2000 ms = 2 seconds -->
+              
+      
+      <!-- Indicators (dots) -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="clearfix border-start border-2 ps-2 d-flex flex-column flex-md-row">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni laboriosam
+                                eligendi
+                                minus eum quia provident nobis ea omnis. Iure aspernatur totam labore pariatur magni
+                                esse!
+                                Asperiores, at!</p>
+                            <h3>Saul Goodman</h3>
+                            <h6>Ceo & Founder</h6>
+                        </div>
+                        <div>
+                            <img src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/person/person-m-9.webp"
+                                class="d-block float-end w-25 rounded-circle" alt="...">
+                        </div>
+                    </div>
+        </div>
+        <div class="carousel-item">
+          
+            <div class="clearfix border-start border-2 ps-2 d-flex flex-column flex-md-row">
+
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni laboriosam
+                                eligendi
+                                minus eum quia provident nobis ea omnis. Iure aspernatur totam labore pariatur magni
+                                esse!
+                                Asperiores, at!</p>
+                            <h3>Sara Wilsson</h3>
+                            <h6>Designer</h6>
+                        </div>
+                        <div>
+                            <img src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/person/person-f-5.webp"
+                                class="d-block float-end w-25 rounded-circle" alt="...">
+                        </div>
+                    </div>
+          </div>
+        
+        <div class="carousel-item">
+          <div class="clearfix border-start border-2 ps-2 d-flex flex-column flex-md-row">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni laboriosam
+                                eligendi
+                                minus eum quia provident nobis ea omnis. Iure aspernatur totam labore pariatur magni
+                                esse!
+                                Asperiores, at!</p>
+                            <h3>Jena Karlis</h3>
+                            <h6>Store Owner</h6>
+                        </div>
+                        <div>
+                            <img src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/person/person-f-12.webp"
+                                class="d-block float-end w-25 rounded-circle" alt="...">
+                        </div>
+                    </div>
+        </div>
+        <div class="carousel-item">
+         <div class="clearfix border-start border-2 ps-2 d-flex flex-column flex-md-row">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni laboriosam
+                                eligendi
+                                minus eum quia provident nobis ea omnis. Iure aspernatur totam labore pariatur magni
+                                esse!
+                                Asperiores, at!</p>
+                            <h3>John Larson</h3>
+                            <h6>Entrepreneur</h6>
+                        </div>
+                        <div>
+                            <img src="https://bootstrapmade.com/content/demo/TravelTime/assets/img/person/person-m-12.webp"
+                                class="d-block float-end w-25 rounded-circle" alt="...">
+                        </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="color">
+        <section class="container my-5">
+            <div class="row justify-content-center ">
+                <div class="col-lg-8 col-md-6 text-center my-5 d-flex flex-column gap-2 text-light">
+                    <h1 class="fs-1 fw-bold">Ready to Start Your Next Adventure?</h1>
+                    <p>Discover breathtaking destinations, create unforgettable memories, and explore the world with our
+                        expertly crafted travel packages. From exotic beaches to mountain peaks, your perfect journey
+                        awaits.</p>
+                    <div class="d-flex justify-content-center gap-5"> <a href="#"
+                            class="btn destination rounded-pill py-2 px-3">EXPLORE DESTINATIONS</a>
+                        <a href="#" class="btn plan rounded-pill py-2 px-3">PLAN YOUR TRIP</a>
+                    </div>
+                </div>
+                <div class="row mt-5 d-flex justify-content-center gap-3 gy-5 ">
+                    <div id="four-box"
+                        class="col-lg-3 col-md-6 col-12 text-center  rounded-4 p-3 d-flex flex-column gap-2">
+                        <i class="bi bi-globe rounded-circle align-self-center "></i>
+                        <h4>50+ Destinations</h4>
+                        <p>Explore amazing destinations across all continents</p>
+                    </div>
+                    <div id="four-box"
+                        class="col-lg-3 col-md-6 col-12 text-center  rounded-4 p-3 d-flex flex-column gap-2">
+                        <i class="bi bi-shield-check rounded-circle align-self-center"></i>
+                        <h4>Safe & Secure</h4>
+                        <p>Travel with confidence with our safety guarantee</p>
+                    </div>
+                    <div id="four-box"
+                        class="col-lg-3 col-md-6 col-12 text-center  rounded-4 p-3 d-flex flex-column gap-2">
+                        <i class="bi bi-headset rounded-circle align-self-center"></i>
+                        <h4>24/7 Support</h4>
+                        <p>Round-the-clock assistance whenever you need it</p>
+                    </div>
+                    <div id="four-box"
+                        class=" col-lg-3 col-md-6 col-12 text-center  rounded-4 p-3 d-flex flex-column gap-2">
+                        <i class="bi bi-percent rounded-circle align-self-center"></i>
+                        <h4>Best Prices</h4>
+                        <p>Competitive rates with exclusive deals and offers</p>
+                    </div>
+
+                </div>
+                <div id="after-four" class=" row  rounded-5 mt-5 mb-5 px-3 py-5 text-center">
+                    <div class="col-lg-3 col-md-6 col-12 text-light ">
+                        <h1 class="fw-bold">15000</h1>
+                        <h6>HAPPY TRAVELLERS</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 text-light">
+                        <h1 class="fw-bold">127</h1>
+                        <h6>COUNTRIES COVERED</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 text-light">
+                        <h1 class="fw-bold">98</h1>
+                        <h6>SATISFACTION RATE</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 text-light">
+                        <h1 class="fw-bold">12</h1>
+                        <h6>YEARS EXPERIENCE</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <div class="footer ">
+        <footer class="container  ">
+            <section class="row text-light py-5 d-flex gy-5 justify-content-center px-5">
+                <div id="travel-foot" class="col-lg-3 col-md-6 col-12">
+                    <h3>TravelTime</h3>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Donec
+                        velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula.</p>
+                    <h5>Stay Updated</h5>
+                    <div class="input-group">
+                        <input type="email" class="form-control " placeholder="Enter your email">
+                        <button href="#" type="submit" class="form-btn btn rounded-end-5 "><i
+                                class="bi bi-send"></i></button>
+                    </div>
+
+                </div>
+                <div id="foot" class="foot-hover col-lg-3 col-md-6 col-12">
+                    <h4>Company</h4>
+
+
+                    <li><i class="bi bi-chevron-right"></i> About</li>
+                    <li><i class="bi bi-chevron-right"></i> Careers</li>
+                    <li><i class="bi bi-chevron-right"></i> Press</li>
+                    <li><i class="bi bi-chevron-right"></i> Blog</li>
+                    <li><i class="bi bi-chevron-right"></i> Contact</li>
+
+
+                </div>
+                <div id="foot" class="foot-hover col-lg-3 col-md-6 col-12">
+                    <h4>Solutions</h4>
+
+
+                    <li><i class="bi bi-chevron-right"></i> Digital Strategy</li>
+                    <li><i class="bi bi-chevron-right"></i> Cloud Computing</li>
+                    <li><i class="bi bi-chevron-right"></i> Data Analytics</li>
+                    <li><i class="bi bi-chevron-right"></i> AI Solutions</li>
+                    <li><i class="bi bi-chevron-right"></i> Cybersecurity</li>
+
+                </div>
+                <div id="foot" class="col-lg-3 col-md-6 col-12">
+                    <h4>Get in Touch</h4>
+
+                    <li>2847 Maple Avenue
+                        Los Angeles, CA 90210
+                        United States</li>
+                    <li>
+                        +1 (555) 987-6543</li>
+                    <li>contact@example.com</li>
+                    <li><span><i class="bi bi-facebook"></i></span>
+                        <span><i class="bi bi-twitter-x"></i></span>
+                        <span><i class="bi bi-linkedin"></i></span>
+                        <span><i class="bi bi-youtube"></i></span>
+                        <span><i class="bi bi-github"></i></span>
+                    </li>
+
+                </div>
+            </section>
+        </footer>
+    </div>
+
+
+
+
+    <div class="last">
+
+
+        <div class="container ">
+            <p class="p-5 m-0 text-light text-center">&copy; Copyright <span class="fs-bold">MyWebsite</span> All Rights
+                Reserved</p>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
+

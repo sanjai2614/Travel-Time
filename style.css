@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+}
+.navbar{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.navbar .nav-link {
+    color: white !important;        
+    font-weight: 500;
+}
+
+.navbar .nav-link.active {
+    color: white !important;      
+}
+
+.navbar .nav-link:hover {
+    color: #f95e4d !important;      
+}
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.getstarted {
+    background-color: #f95e4d;
+    color: white;
+
+}
+
+.navbar {
+    background: linear-gradient(rgba(3,6,19,.6));
+    color: white !important;
+    width: 100vw !important;
+}
+.navbar-collapse{
+    color: white !important;
+    text-decoration: none !important;
+
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    color: white;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.feature{
+    transition:all 0.3s linear
+}
+.feature:hover{
+    
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 20px black;
+    border-radius: 20px;
+}
+
+.first {
+    background: linear-gradient(color-mix(in srgb, rgb(3, 16, 19) 70%, transparent),
+            color-mix(in srgb, rgb(3, 16, 19) 70%, transparent)), url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/showcase-1.webp) no-repeat right;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+
+}
+#aboutus i{
+    color: #f95e4d;
+}
+
+#four {
+    height: 100%;
+}
+
+.color {
+    background-color: #ee6859;
+}
+
+.card {
+    border: none !important;
+}
+
+.c-1, .c-2, .c-3, .c-4 {
+
+    width: 250px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    transition: all 0.6s;
+
+    &:hover {
+        transform: translateY(-4px);
+        border: 1px solid #f95e4d !important;
+        border-radius: 20px;
+    }
+}
+
+.c-1:hover i{
+    transition: all .2s linear;
+    color: #feeeed !important;
+    background-color: #f67f70 !important;
+}
+.c-2:hover i{
+    transition: all .2s linear;
+    color: #feeeed !important;
+    background-color: #f67f70 !important;
+}
+.c-3:hover i{
+    transition: all .2s linear;
+    color: #feeeed !important;
+    background-color: #f67f70 !important;
+}
+.c-4:hover i{
+    transition: all .2s linear;
+    color: #feeeed !important;
+    background-color: #f67f70 !important;
+}
+
+#four i {
+    background-color: #feeeed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 18px;
+    align-self: center;
+    color: #f95e4d;
+}
+
+.double {
+    color: #f95e4d;
+    background-color: #feeeed;
+    font-weight: 600;
+    border: none !important;
+    font-size: 12px !important;
+    padding: 5px;
+
+}
+
+.explore {
+    font-size: 12px;
+    font-weight: 600;
+    color: #f95e4d;
+    border: #f95e4d 1px solid !important;
+}
+
+#cant {
+    background-color: #fef0ef;
+}
+
+.view-btn {
+    color: white;
+    background-color: #f95e4d;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.expert-btn {
+    color: #f95e4d;
+    border: #f95e4d 1px solid;
+    padding: 10px 20px;
+}
+
+.destination {
+    color: #f95e4d;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    transition: all .3s;
+
+    &:hover {
+        color: white;
+        background-color: #f95e4d;
+        border: 1px solid #f95e4d;
+        transform: translateY(-2px);
+        box-shadow: 0px 0px 6px black;
+    }
+}
+
+.plan {
+    color: white;
+    background-color: #f95e4d;
+    border: 1px solid white;
+    font-weight: 600;
+    transition: all .3s;
+
+    &:hover {
+        color: #f95e4d;
+        background-color: white;
+        transform: translateY(-2px);
+        box-shadow: 0px 0px 6px black;
+
+
+    }
+}
+
+
+
+
+.img-1 {
+    background: url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-12.webp	) center;
+    height: 400px;
+    width: 250px;
+
+    transition: all .3s;
+    &:hover{
+        
+        transform: translateY(-4px);
+        background-image: linear-gradient(rgba(0,0,0,.6)), url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-12.webp);
+    }
+}
+
+.img-2 {
+    background: url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-15.webp) center;
+    height: 400px;
+    width: 250px;
+
+    transition: all .3s;
+    &:hover{
+        
+        transform: translateY(-4px);
+        background-image: linear-gradient(rgba(0,0,0,.6)), url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-15.webp);
+    }
+}
+
+.img-3 {
+    background: url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-18.webp	) center;
+    height: 400px;
+    width: 250px;
+    transition: all .3s;
+
+    &:hover{
+        
+        transform: translateY(-4px);
+        background-image: linear-gradient(rgba(0,0,0,.6)), url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-18.webp);
+    }
+}
+
+.img-4 {
+    background: url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-22.webp	) center;
+    height: 400px;
+    width: 250px;
+
+    transition: all .3s;
+    &:hover{
+        
+        transform: translateY(-4px);
+        background-image: linear-gradient(rgba(0,0,0,.6)), url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-22.webp);
+    }
+}
+
+.img-5 {
+    background: url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-25.webp	) center;
+    height: 400px;
+    width: 250px;
+
+    transition: all .3s;
+    &:hover{
+        transform: translateY(-4px);
+        
+        background-image: linear-gradient(rgba(0,0,0,.6)), url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-25.webp);
+    }
+}
+
+.img-6 {
+    background: url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-28.webp	) center;
+    height: 400px;
+    width: 250px;
+    transition: all .3s;
+
+    &:hover{
+        transform: translateY(-4px);
+        
+        background-image: linear-gradient(rgba(0,0,0,.6)), url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-28.webp);
+    }
+}
+
+.img-7 {
+    background: url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-20.webp	) center;
+    height: 400px;
+    width: 250px;
+    transition: all .3s;
+
+    &:hover{
+        transform: translateY(-4px);
+
+        background-image: linear-gradient(rgba(0,0,0,.6)), url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-20.webp);
+    }
+}
+
+.img-8 {
+    background: url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-17.webp	) center;
+    height: 400px;
+    width: 250px;
+    transition: all .3s;
+    &:hover{
+        transform: translateY(-4px);
+        background-image: linear-gradient(rgba(0,0,0,.6)), url(https://bootstrapmade.com/content/demo/TravelTime/assets/img/travel/tour-17.webp);
+    }
+}
+
+.img-11, .img-12, .img-13, .img-14, .img-15, .img-16, .img-17, .img-18{
+ display: none !important;
+ transition: all .3s linear !important;
+
+}
+
+
+
+.img-1:hover .img-11{
+    display: block !important;
+}
+.img-2:hover .img-12{
+    display: block !important;
+}
+.img-3:hover .img-13{
+    display: block !important;
+}
+.img-4:hover .img-14{
+    display: block !important;
+}
+.img-5:hover .img-15{
+    display: block !important;
+}
+.img-6:hover .img-16{
+    display: block !important;
+}
+.img-7:hover .img-17{
+    display: block !important;
+}
+.img-8:hover .img-18{
+    display: block !important;
+}
+
+.best{
+    color: white;
+    border: none;
+    padding: 0px 10px;
+    font-size: small;
+    font-weight: bold;
+}
+.tour{
+    background-color: #f95e4d;
+    color: white;
+    border-radius: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+
+#four-box {
+    width: 250px;
+    background-color: #f67f70;
+    height: auto;
+    transition: all .3s;
+    color: white;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 0px 20px black;
+    }
+}
+
+#four-box i {
+    width: 70px;
+    font-size: 30px;
+    background-color: white;
+    color: #f95e4d;
+    padding: 10px 15px;
+}
+
+#after-four {
+    background-color: #f67f70;
+}
+
+#foot {
+    width: 200px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all .3s linear;
+
+}
+
+#foot i {
+    color: #f95e4d;
+
+}
+
+
+#travel-foot {
+    width: 350px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-btn {
+    background-color: #f95e4d;
+    color: white;
+
+    &:hover {
+        background-color: #f95e4d;
+
+    }
+
+}
+.clearfix {
+    border-color: #f95e4d !important;
+}
+
+.foot-hover li:hover {
+    transform: translateX(3px);
+    color: #f95e4d;
+    cursor: pointer;
+}
+
+.footer span {
+    margin-right: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+
+footer input {
+    background-color: black !important;
+    border: none !important;
+    box-shadow: 0px 0px 10px black;
+    color: white !important;
+
+}
+
+.footer {
+    background-color: #031013;
+    font-size: 15px;
+}
+
+
+.last {
+    background-color: #101c1f;
+
+}
