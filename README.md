@@ -9,7 +9,6 @@ The project presents a creative time travel concept with a clean UI, smooth navi
 ## 🛠️ Technologies Used
 - HTML5
 - CSS3
-- JavaScript
 - Bootstrap 5
 - Responsive Web Design
 
